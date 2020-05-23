@@ -11,33 +11,6 @@ public class GameSession : MonoBehaviour
         //Testing:
         m_CandidateFactory.Load();
 
-        /*
-        Candidate c = new Candidate();
-
-        Debug.Log(JsonConvert.SerializeObject(c));
-
-        CandidatePool cp = new CandidatePool()
-        {
-            Candidates = new Candidate[]
-            {
-                c
-            },
-            FirstNames = new string[]
-            {
-                "Dave"
-            },
-            LastNames = new string[]
-            {
-                "Smith"
-            },
-            LoyalityBounds = new MinMax
-            {
-                Min = 0, Max = 100
-            }
-        };
-
-        Debug.Log(JsonConvert.SerializeObject(cp));
-        */
     }
 
     private void Update()
@@ -46,7 +19,6 @@ public class GameSession : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Debug.Log(JsonConvert.SerializeObject(m_CandidateFactory.Generate()));
-
         }
     }
 }
