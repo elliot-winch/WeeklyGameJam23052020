@@ -1,0 +1,34 @@
+{
+	"Candidates": [
+		{
+			"FirstName": null,
+			"LastName": "Jones",
+			"Wealth": 10,
+			"Loyality": 10,
+			"Reputation": 10,
+			"PersuasionRequirement": 0,
+			"RandomWealth": false,
+			"RandomLoyality": false,
+			"RandomReputation": false,
+			"RandomPersuasionRequirement": true
+		}
+	],
+	"FirstNames": [ "Dave" ],
+	"LastNames": [ "Smith" ],
+	"WealthBounds": {
+		"Min": 0,
+		"Max": 100
+	},
+	"LoyalityBounds": {
+		"Min": 0,
+		"Max": 100
+	},
+	"ReputationBounds": {
+		"Min": 0,
+		"Max": 100
+	},
+	"PersuasionRequirementBounds": {
+		"Min": 0,
+		"Max": 100
+	},
+}
