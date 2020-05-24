@@ -14,5 +14,13 @@ public class Conversation
         CurrentChoice = opening;
     }
 
-    //public Response GetResponse()
+    public void SelectOption(Option option)
+    {
+        CurrentChoice = GetNextChoice(option);
+    }
+
+    private Choice GetNextChoice(Option option)
+    {
+
+    }
 }

@@ -6,9 +6,10 @@ public class GameSession : MonoBehaviour
     [SerializeField]
     private CandidateFactory m_CandidateFactory;
 
+    private Conversation m_Conversation;
+
     private void Awake()
     {
-        //Testing:
         m_CandidateFactory.Load();
 
     }

@@ -3,6 +3,15 @@
 [Serializable]
 public class Option
 {
-    public string Phrase;
+    //What the player will say to the candidate
+    public string Phrase; 
+    
     //parameters
+}
+
+[Serializable]
+public class AttainableChoice
+{
+    public int ScoreRequired;
+    public string ChoiceID;
 }

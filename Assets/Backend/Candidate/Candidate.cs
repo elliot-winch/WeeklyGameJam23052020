@@ -9,7 +9,7 @@ public class Candidate
     public int Loyality;
     public int Reputation;
     public int PersuasionRequirement;
-    //public Personality Personality;
+    public Personality Personality;
 
     //Names are randomly generated if they're left blank
     public bool RandomWealth = true;
