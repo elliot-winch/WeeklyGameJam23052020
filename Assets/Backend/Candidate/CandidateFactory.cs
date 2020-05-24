@@ -1,30 +1,7 @@
 ﻿using UnityEngine;
-using System;
 using System.Linq;
 using Random = System.Random;
 using System.Collections.Generic;
-
-[Serializable]
-public class CandidatePool
-{
-    public Candidate[] Candidates;
-
-    //Random generated fields
-    public string[] FirstNames;
-    public string[] LastNames;
-
-    public MinMax WealthBounds;
-    public MinMax LoyalityBounds;
-    public MinMax ReputationBounds;
-    public MinMax PersuasionRequirementBounds;
-}
-
-[Serializable]
-public class MinMax
-{
-    public int Min;
-    public int Max;
-}
 
 public class CandidateFactory : MonoBehaviour
 {

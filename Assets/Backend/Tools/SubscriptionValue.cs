@@ -3,7 +3,7 @@
 public class SubscriptionValue<T>
 {
     private T mValue;
-    private Action<SubscriptionValue<T>> mOnValueChanged;
+    private Action<T> mOnValueChanged;
 
     public T Value
     {
@@ -11,8 +11,13 @@ public class SubscriptionValue<T>
         set
         {
             mValue = value;
-            mOnValueChanged?.Invoke(this);
+            mOnValueChanged?.Invoke(mValue);
         }
+    }
+
+    public SubscriptionValue()
+    {
+        mValue = default;
     }
 
     public SubscriptionValue(T startingValue)
@@ -20,13 +25,13 @@ public class SubscriptionValue<T>
         mValue = startingValue;
     }
 
-    public void Subscribe(Action<SubscriptionValue<T>> action)
+    public void Subscribe(Action<T> action)
     {
-        action?.Invoke(this);
+        action?.Invoke(mValue);
         mOnValueChanged += action;
     }
 
-    public void Unsubscribe(Action<SubscriptionValue<T>> action)
+    public void Unsubscribe(Action<T> action)
     {
         mOnValueChanged -= action;
     }
