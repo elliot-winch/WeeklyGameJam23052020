@@ -1,0 +1,56 @@
+{
+	"Choices": [
+		{
+			"ID": "1",
+			"Phrase": "Hello there",
+			"Options": [
+				{
+					"Phrase": "Hi, how are you?",
+					"DefaultChoiceID": "2",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "3"
+						}
+					]
+				},
+				{
+					"Phrase": "You better join this cult, bitch",
+					"DefaultChoiceID": "4",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "5"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "2",
+			"Phrase": "I'm okay. I am concerned you guys are a cult.",
+			"Options": [
+				{
+					"Phrase": "We're absolutely a cult",
+					"DefaultChoiceID": "6",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "3"
+						}
+					]
+				},
+				{
+					"Phrase": "Why do you say that?",
+					"DefaultChoiceID": "7",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "3"
+						}
+					]
+				}
+			]
+		}
+	]
+}

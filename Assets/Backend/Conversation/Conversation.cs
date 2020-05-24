@@ -1,18 +1,56 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Conversation 
 {
+    private ChoicePool m_ChoicePool;
+    private IScoreGenerator m_Scorer;
+
     public Candidate Candidate { get; private set; }
 
-    public Choice CurrentChoice { get; private set; }
+    public SubscriptionValue<Choice> Choice { get; private set; }
 
-    public Conversation(Candidate candidate, Choice opening)
+    public Conversation(Candidate candidate, Choice opening, ChoicePool choicePool, IScoreGenerator scorer)
     {
+        m_ChoicePool = choicePool;
+        m_Scorer = scorer;
         Candidate = candidate;
-        CurrentChoice = opening;
+        Choice = new SubscriptionValue<Choice>(opening);
     }
 
-    //public Response GetResponse()
+    public void SelectOption(Option option)
+    {
+        Choice.Value = GetNextChoice(option);
+    }
+
+    private Choice GetNextChoice(Option option)
+    {
+        int score = m_Scorer.GetScore(Candidate.Personality, option);
+
+        //ordering the list with the highest score first means that as we compare, we check the better results first
+        IEnumerable<AttainableChoice> outcomes = option.AttainableChoices.OrderByDescending(outcome => outcome.ScoreRequired);
+        
+        foreach(AttainableChoice outcome in outcomes)
+        {
+            if(score >= outcome.ScoreRequired)
+            {
+                return GetChoiceForID(outcome.ChoiceID);
+            }
+        }
+
+        return GetChoiceForID(option.DefaultChoiceID);
+    }
+
+    private Choice GetChoiceForID(string id)
+    {
+        Choice choice = m_ChoicePool.Choices.FirstOrDefault(c => c.ID == id);
+
+        if(choice == null)
+        {
+            Debug.LogError("Cannot find choice for ID: " + id);
+        }
+
+        return choice;
+    }
 }
