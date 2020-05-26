@@ -348,6 +348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7132183490725639586}
+  - component: {fileID: 1520465589}
   m_Layer: 0
   m_Name: LoyaltyStatGroup
   m_TagString: Untagged
@@ -374,6 +375,22 @@ Transform:
   m_Father: {fileID: 3575092229884174894}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520465589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710824328007686714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ff4385f35924a4f8f867df2cf2114f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positiveMeter: {fileID: 2666407001426877832}
+  _negativeMeter: {fileID: 7188108712180828284}
+  _negativeAxis: {fileID: 6849838518898648735}
+  _positiveAxis: {fileID: 6354103962103290226}
 --- !u!1 &1066498667392098743
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114057195390537131}
+  - component: {fileID: 335327783}
   m_Layer: 0
   m_Name: ReputationStatGroup
   m_TagString: Untagged
@@ -482,6 +500,22 @@ Transform:
   m_Father: {fileID: 3575092229884174894}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335327783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072826707071655500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ff4385f35924a4f8f867df2cf2114f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positiveMeter: {fileID: 8245571802480151679}
+  _negativeMeter: {fileID: 7916599344902669527}
+  _negativeAxis: {fileID: 3514900700082897112}
+  _positiveAxis: {fileID: 5969199450838487677}
 --- !u!1 &1204698541958085491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,6 +1286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9091017246806970968}
+  - component: {fileID: 678847170}
   m_Layer: 0
   m_Name: WealthStatGroup
   m_TagString: Untagged
@@ -1278,6 +1313,22 @@ Transform:
   m_Father: {fileID: 3575092229884174894}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678847170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122561310190613833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ff4385f35924a4f8f867df2cf2114f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positiveMeter: {fileID: 6857431186170806729}
+  _negativeMeter: {fileID: 9058912270466572761}
+  _negativeAxis: {fileID: 5736494109905211506}
+  _positiveAxis: {fileID: 8304655467221700402}
 --- !u!1 &3232162879084768620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,8 +1547,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.3, y: -9.6}
-  m_SizeDelta: {x: 15.76, y: 16.8}
+  m_AnchoredPosition: {x: -0.7, y: -9.4}
+  m_SizeDelta: {x: 22.91, y: 22.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1159856267623926256
 CanvasRenderer:
@@ -1525,7 +1576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d5c021f5eb85c4207af17bc0dffb6fbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 883b004d0822a43d9a2dd935f1c63c49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
