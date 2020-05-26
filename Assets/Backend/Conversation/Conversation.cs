@@ -11,11 +11,23 @@ public class Conversation
     public SubscriptionValue<int> PersuasionLevel { get; private set; } = new SubscriptionValue<int>();
     public SubscriptionValue<Choice> Choice { get; private set; }
 
-    public Conversation(Personality personality, Choice opening, ChoicePool choicePool, IScoreGenerator scorer)
+    public Conversation(Candidate candidate, ChoicePool pool, IScoreGenerator scorer)
     {
-        m_ChoicePool = choicePool;
+        m_ChoicePool = pool;
         m_Scorer = scorer;
-        m_Personality = personality;
+        m_Personality = candidate.Personality;
+
+        Choice opening;
+
+        if (string.IsNullOrWhiteSpace(candidate.StartingConversationChoiceID))
+        {
+            opening = pool.Choices.Where(choice => choice.IsStartingNode).ToArray().GetRandom();
+        }
+        else
+        {
+            opening = GetChoiceForID(candidate.StartingConversationChoiceID);
+        }
+
         Choice = new SubscriptionValue<Choice>(opening);
     }
 

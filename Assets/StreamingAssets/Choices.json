@@ -3,6 +3,7 @@
 		{
 			"ID": "1",
 			"Phrase": "Hello there",
+			"IsStartingNode": true,
 			"Options": [
 				{
 					"Phrase": "Hi, how are you?",
@@ -47,6 +48,33 @@
 						{
 							"ScoreRequired": 10,
 							"ChoiceID": "3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "3",
+			"Phrase": "Yo yo yo",
+			"IsStartingNode": true,
+			"Options": [
+				{
+					"Phrase": "Yo my dude",
+					"DefaultChoiceID": "2",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "2"
+						}
+					]
+				},
+				{
+					"Phrase": "Good golly!",
+					"DefaultChoiceID": "2",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "2"
 						}
 					]
 				}
