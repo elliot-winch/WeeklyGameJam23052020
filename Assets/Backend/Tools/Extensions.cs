@@ -6,6 +6,6 @@ public static class Extensions
     {
         random = random ?? new Random();
 
-        return array[random.Next(0, array.Length)];
+        return array.Length > 0 ? array[random.Next(0, array.Length)] : default;
     }
 }
