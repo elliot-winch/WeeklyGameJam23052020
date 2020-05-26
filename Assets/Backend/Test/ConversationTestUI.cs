@@ -18,6 +18,12 @@ public class ConversationTestUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI m_CandidateSpeechText;
     [SerializeField]
+    private CandidateStatMeter _wealthMeter;
+    [SerializeField]
+    private CandidateStatMeter _reputationMeter;
+    [SerializeField]
+    private CandidateStatMeter _loyaltyMeter;
+    [SerializeField]
     private GameSession m_GameSession;
 
     private void Awake()
@@ -31,6 +37,13 @@ public class ConversationTestUI : MonoBehaviour
         {
             m_CandidateNameText.text = conversation.Candidate.FirstName;
             conversation.Choice.Subscribe(SetupChoice);
+
+            //TODO: Change hardcoded "20" to an actual max that the stats can be.
+
+            _wealthMeter.SetCandidateStats(conversation.Candidate.Wealth, 20);
+            _reputationMeter.SetCandidateStats(-10, -20);
+            _loyaltyMeter.SetCandidateStats(conversation.Candidate.Loyality, 20);
+
         }
     }
 
@@ -43,7 +56,7 @@ public class ConversationTestUI : MonoBehaviour
         foreach(Option option in choice.Options)
         {
             Button button = Instantiate(m_ButtonPrefab, m_ButtonParent);
-            button.GetComponentInChildren<Text>().text = option.Phrase;
+            button.GetComponentInChildren<TextMeshProUGUI>().text = option.Phrase;
             button.onClick.AddListener(() => { m_GameSession.Conversation.Value.SelectOption(option); });
         }
     }
