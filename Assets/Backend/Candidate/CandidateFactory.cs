@@ -8,7 +8,7 @@ public class CandidateFactory : MonoBehaviour
     [SerializeField]
     private string m_FilePath;
 
-    private CandidatePool m_CandidatePool;
+    public CandidatePool CandidatePool { get; private set; }
 
     private List<Candidate> m_AvailableCandidates;
     private Random m_Random;
@@ -16,8 +16,8 @@ public class CandidateFactory : MonoBehaviour
     public void Load(int? seed = null)
     {
         m_Random = seed.HasValue ? new Random(seed.Value) : new Random();       
-        m_CandidatePool = JSONLoader.LoadFromFile<CandidatePool>(m_FilePath);
-        m_AvailableCandidates = m_CandidatePool.Candidates.ToList();
+        CandidatePool = JSONLoader.LoadFromFile<CandidatePool>(m_FilePath);
+        m_AvailableCandidates = CandidatePool.Candidates.ToList();
     }
 
     public Candidate Generate(int? seed = null)
@@ -29,7 +29,7 @@ public class CandidateFactory : MonoBehaviour
 
         Random random = seed.HasValue ? new Random(seed.Value) : m_Random;
 
-        Candidate candidate = m_AvailableCandidates[random.Next(0, m_CandidatePool.Candidates.Length)];
+        Candidate candidate = m_AvailableCandidates[random.Next(0, CandidatePool.Candidates.Length)];
 
         m_AvailableCandidates.Remove(candidate);
 
@@ -47,32 +47,32 @@ public class CandidateFactory : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(candidate.FirstName))
         {
-            candidate.FirstName = m_CandidatePool.FirstNames[random.Next(0, m_CandidatePool.FirstNames.Length)];
+            candidate.FirstName = CandidatePool.FirstNames.GetRandom(random);
         }
 
         if (string.IsNullOrWhiteSpace(candidate.LastName))
         {
-            candidate.LastName = m_CandidatePool.LastNames[random.Next(0, m_CandidatePool.LastNames.Length)];
+            candidate.LastName = CandidatePool.LastNames.GetRandom(random);
         }
 
         if (candidate.RandomWealth)
         {
-            candidate.Wealth = random.Next(m_CandidatePool.WealthBounds.Min, m_CandidatePool.WealthBounds.Max);
+            candidate.Wealth = random.Next(CandidatePool.WealthBounds.Min, CandidatePool.WealthBounds.Max);
         }
 
         if (candidate.RandomLoyality)
         {
-            candidate.Loyality = random.Next(m_CandidatePool.LoyalityBounds.Min, m_CandidatePool.LoyalityBounds.Max);
+            candidate.Loyality = random.Next(CandidatePool.LoyalityBounds.Min, CandidatePool.LoyalityBounds.Max);
         }
 
         if (candidate.RandomReputation)
         {
-            candidate.Reputation = random.Next(m_CandidatePool.ReputationBounds.Min, m_CandidatePool.ReputationBounds.Max);
+            candidate.Reputation = random.Next(CandidatePool.ReputationBounds.Min, CandidatePool.ReputationBounds.Max);
         }
 
         if (candidate.RandomPersuasionRequirement)
         {
-            candidate.PersuasionRequirement = random.Next(m_CandidatePool.PersuasionRequirementBounds.Min, m_CandidatePool.PersuasionRequirementBounds.Max);
+            candidate.PersuasionRequirement = random.Next(CandidatePool.PersuasionRequirementBounds.Min, CandidatePool.PersuasionRequirementBounds.Max);
         }
 
         return candidate;

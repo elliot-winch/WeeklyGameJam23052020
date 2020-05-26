@@ -16,6 +16,13 @@ public class Candidate
     public bool RandomLoyality = true;
     public bool RandomReputation = true;
     public bool RandomPersuasionRequirement = true;
+
+    public string StartingConversationChoiceID;
+
+    //Responses to conversation outcomes
+    public string SuccessResponse;
+    public string FailureResponse;
+    public string RejectedResponse;
 }
 
 [Serializable]
@@ -23,14 +30,14 @@ public class CandidatePool
 {
     public Candidate[] Candidates;
 
-    //Random generated fields
-    public string[] FirstNames;
-    public string[] LastNames;
-
     public MinMax WealthBounds;
     public MinMax LoyalityBounds;
     public MinMax ReputationBounds;
     public MinMax PersuasionRequirementBounds;
+
+    //Random generated fields
+    public string[] FirstNames;
+    public string[] LastNames;
 }
 
 [Serializable]

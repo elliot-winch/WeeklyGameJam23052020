@@ -6,16 +6,16 @@ public class Conversation
 {
     private ChoicePool m_ChoicePool;
     private IScoreGenerator m_Scorer;
+    private Personality m_Personality;
 
-    public Candidate Candidate { get; private set; }
-
+    public SubscriptionValue<int> PersuasionLevel { get; private set; } = new SubscriptionValue<int>();
     public SubscriptionValue<Choice> Choice { get; private set; }
 
-    public Conversation(Candidate candidate, Choice opening, ChoicePool choicePool, IScoreGenerator scorer)
+    public Conversation(Personality personality, Choice opening, ChoicePool choicePool, IScoreGenerator scorer)
     {
         m_ChoicePool = choicePool;
         m_Scorer = scorer;
-        Candidate = candidate;
+        m_Personality = personality;
         Choice = new SubscriptionValue<Choice>(opening);
     }
 
@@ -26,7 +26,10 @@ public class Conversation
 
     private Choice GetNextChoice(Option option)
     {
-        int score = m_Scorer.GetScore(Candidate.Personality, option);
+        int score = m_Scorer.GetScore(m_Personality, option);
+
+        //The value of each choice is summed to make the current persuasion level
+        PersuasionLevel.Value += score;
 
         //ordering the list with the highest score first means that as we compare, we check the better results first
         IEnumerable<AttainableChoice> outcomes = option.AttainableChoices.OrderByDescending(outcome => outcome.ScoreRequired);

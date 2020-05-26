@@ -12,6 +12,7 @@ public class Choice
     public string ID;
     //What the candidate will say to the player
     public string Phrase;
+    public bool IsStartingNode;
     public Option[] Options;
 }
 
@@ -32,4 +33,12 @@ public class AttainableChoice
 {
     public int ScoreRequired;
     public string ChoiceID;
+}
+
+[Serializable]
+public class ConversationConclusionStrings
+{
+    public string[] SuccessResponses;
+    public string[] FailureResponses;
+    public string[] RejectedResponses;
 }

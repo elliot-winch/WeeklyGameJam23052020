@@ -1,0 +1,5 @@
+{
+	"SuccessResponses": [ "Wow, thanks! I won't let you down!" ],
+	"FailureResponses": [ "Ew, no way. You're a cult!" ],
+	"RejectedResponses": [ "Oh okay. See ya" ]
+}
