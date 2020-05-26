@@ -16,22 +16,38 @@ public class ConversationTestUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI m_CandidateNameText;
     [SerializeField]
+    private TextMeshProUGUI m_ConversationConclusionText;
+    [SerializeField]
     private TextMeshProUGUI m_CandidateSpeechText;
     [SerializeField]
     private GameSession m_GameSession;
 
     private void Awake()
     {
-        m_GameSession.Conversation.Subscribe(SetupConversation);   
+        m_GameSession.Candidate.Subscribe(SetupCandidate);
+        m_GameSession.Conversation.Subscribe(SetupConversation);
+        m_GameSession.Conclusion.Subscribe(SetupConversationConclusion);
+    }
+
+    private void SetupCandidate(Candidate candidate)
+    {
+        if(candidate != null)
+        {
+            m_CandidateNameText.text = candidate.FirstName;
+        }
     }
 
     private void SetupConversation(Conversation conversation)
     {
         if(conversation != null)
         {
-            m_CandidateNameText.text = conversation.Candidate.FirstName;
             conversation.Choice.Subscribe(SetupChoice);
         }
+    }
+
+    private void SetupConversationConclusion(ConversationConclusion conclusion)
+    {
+        m_ConversationConclusionText.text = conclusion?.String ?? "";
     }
 
     private void SetupChoice(Choice choice)

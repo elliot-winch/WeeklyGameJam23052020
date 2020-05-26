@@ -16,14 +16,74 @@ public class GameSession : MonoBehaviour
     private CandidateFactory m_CandidateFactory;
     [SerializeField]
     private ChoiceLoader m_ChoiceFactory;
+    [SerializeField]
+    private string m_ConversationConclusionStringsFilePath;
+    [SerializeField]
+    private string m_CultStartingStatsFilePath;
 
+    private ConversationConclusionStrings m_ConversationConlusionStrings;
+
+    public Cult Cult { get; private set; }
+
+    public SubscriptionValue<Candidate> Candidate { get; private set; } = new SubscriptionValue<Candidate>();
     public SubscriptionValue<Conversation> Conversation { get; private set; } = new SubscriptionValue<Conversation>();
+    public SubscriptionValue<ConversationConclusion> Conclusion { get; private set; } = new SubscriptionValue<ConversationConclusion>();
 
     private void Awake()
     {
         m_CandidateFactory.Load();
         m_ChoiceFactory.Load();
 
-        Conversation.Value = new Conversation(m_CandidateFactory.Generate(), m_ChoiceFactory.ChoicePool.Choices[0], m_ChoiceFactory.ChoicePool, new TestScoreGenerator());
+        m_ConversationConlusionStrings = JSONLoader.LoadFromFile<ConversationConclusionStrings>(m_ConversationConclusionStringsFilePath);
+
+        Cult = JSONLoader.LoadFromFile<Cult>(m_CultStartingStatsFilePath);
+    }
+
+    public void NextCandidate()
+    {
+        Conclusion.Value = null;
+
+        Candidate.Value = m_CandidateFactory.Generate();
+
+        //TODO: conversation input params
+        Conversation.Value = new Conversation(Candidate.Value.Personality, m_ChoiceFactory.ChoicePool.Choices[0], m_ChoiceFactory.ChoicePool, new TestScoreGenerator());
+    }
+
+    public void AttemptRecruitCandidate()
+    {
+        if(Conversation.Value == null)
+        {
+            return;
+        }
+
+        if(Conversation.Value.PersuasionLevel.Value >= Candidate.Value.PersuasionRequirement)
+        {
+            Cult.AddCandidate(Candidate.Value);
+
+            Conclusion.Value = new ConversationConclusion(m_ConversationConlusionStrings, Candidate.Value, ConversationResult.Success);
+        }
+        else
+        {
+            Conclusion.Value = new ConversationConclusion(m_ConversationConlusionStrings, Candidate.Value, ConversationResult.Failure);
+        }
+
+        EndConversation();
+    }
+
+    public void RejectCandidate()
+    {
+        if (Conversation.Value == null)
+        {
+            return;
+        }
+
+        EndConversation();
+
+        Conclusion.Value = new ConversationConclusion(m_ConversationConlusionStrings, Candidate.Value, ConversationResult.Rejected);
+    }
+
+    private void EndConversation()
+    {
+        Conversation.Value = null;
     }
 }

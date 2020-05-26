@@ -47,12 +47,12 @@ public class CandidateFactory : MonoBehaviour
     {
         if (string.IsNullOrWhiteSpace(candidate.FirstName))
         {
-            candidate.FirstName = m_CandidatePool.FirstNames[random.Next(0, m_CandidatePool.FirstNames.Length)];
+            candidate.FirstName = m_CandidatePool.FirstNames.GetRandom(random);
         }
 
         if (string.IsNullOrWhiteSpace(candidate.LastName))
         {
-            candidate.LastName = m_CandidatePool.LastNames[random.Next(0, m_CandidatePool.LastNames.Length)];
+            candidate.LastName = m_CandidatePool.LastNames.GetRandom(random);
         }
 
         if (candidate.RandomWealth)

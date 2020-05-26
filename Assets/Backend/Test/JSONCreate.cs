@@ -7,6 +7,36 @@ public class JSONCreate : MonoBehaviour
 {
     private void Start()
     {
+        /*
+        ConversationConclusionStrings st = new ConversationConclusionStrings()
+        {
+            SuccessResponses = new string[]
+            {
+                "Wow, thanks! I won't let you down!"
+            },
+            FailureResponses = new string[]
+            {
+                "Ew, no way. You're a cult!"
+            },
+            RejectedResponses = new string[]
+            {
+                "Oh okay. See ya"
+            }
+        };
+
+        Debug.Log(JsonConvert.SerializeObject(st));
+
+        Cult cult = new Cult()
+        {
+            StartingWealth = 10,
+            StartingLoyality = 10,
+            StartingReputation = 10
+        };
+
+        Debug.Log(JsonConvert.SerializeObject(cult));
+        */
+
+        /*
         ChoicePool pool = new ChoicePool
         {
             Choices = new Choice[]
@@ -83,5 +113,6 @@ public class JSONCreate : MonoBehaviour
         };
 
         Debug.Log(JsonConvert.SerializeObject(pool));
+        */
     }
 }
