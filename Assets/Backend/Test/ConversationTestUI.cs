@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 /// <summary>
 /// TODO: replace with formal UI. This is a test to ensure enough data is exposed to build the UI
@@ -40,6 +38,10 @@ public class ConversationTestUI : MonoBehaviour
         if(candidate != null)
         {
             m_CandidateNameText.text = candidate.FirstName;
+
+            _wealthMeter?.SetCandidateStats(candidate.Wealth, m_GameSession.CandidatePool.WealthBounds.Max);
+            _reputationMeter?.SetCandidateStats(candidate.Loyality, m_GameSession.CandidatePool.ReputationBounds.Max);
+            _loyaltyMeter?.SetCandidateStats(candidate.Loyality, m_GameSession.CandidatePool.LoyalityBounds.Max);
         }
     }
 
@@ -48,13 +50,10 @@ public class ConversationTestUI : MonoBehaviour
         if(conversation != null)
         {
             conversation.Choice.Subscribe(SetupChoice);
-
-            //TODO: Change hardcoded "20" to an actual max that the stats can be.
-
-            _wealthMeter.SetCandidateStats(conversation.Candidate.Wealth, 20);
-            _reputationMeter.SetCandidateStats(-10, -20);
-            _loyaltyMeter.SetCandidateStats(conversation.Candidate.Loyality, 20);
-
+        }
+        else
+        {
+            ClearChoice();
         }
     }
 
@@ -65,21 +64,23 @@ public class ConversationTestUI : MonoBehaviour
 
     private void SetupChoice(Choice choice)
     {
-        ClearChoiceButtons();
+        ClearChoice();
 
         m_CandidateSpeechText.text = choice.Phrase;
 
-        foreach(Option option in choice.Options)
+        foreach (Option option in choice.Options)
         {
             Button button = Instantiate(m_ButtonPrefab, m_ButtonParent);
-            button.GetComponentInChildren<TextMeshProUGUI>().text = option.Phrase;
+            button.GetComponentInChildren<Text>().text = option.Phrase;
             button.onClick.AddListener(() => { m_GameSession.Conversation.Value.SelectOption(option); });
         }
     }
 
-    private void ClearChoiceButtons()
+    private void ClearChoice()
     {
-        foreach(Button button in m_ButtonParent.GetComponentsInChildren<Button>())
+        m_CandidateSpeechText.text = "";
+
+        foreach (Button button in m_ButtonParent.GetComponentsInChildren<Button>())
         {
             Destroy(button.gameObject);
         }

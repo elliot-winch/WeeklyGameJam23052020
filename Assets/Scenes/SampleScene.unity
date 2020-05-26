@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 87261994}
   - component: {fileID: 87261995}
   - component: {fileID: 87261996}
-  - component: {fileID: 87261997}
   m_Layer: 0
   m_Name: GameSession
   m_TagString: Untagged
@@ -215,19 +214,10 @@ MonoBehaviour:
   m_CandidateNameText: {fileID: 491656394}
   m_ConversationConclusionText: {fileID: 1273329762}
   m_CandidateSpeechText: {fileID: 1970758165}
+  _wealthMeter: {fileID: 0}
+  _reputationMeter: {fileID: 0}
+  _loyaltyMeter: {fileID: 0}
   m_GameSession: {fileID: 87261992}
---- !u!114 &87261997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87261991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20656413c639abe42b6c1e61aeddb7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &177508951
 GameObject:
   m_ObjectHideFlags: 0

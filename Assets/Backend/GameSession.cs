@@ -24,6 +24,7 @@ public class GameSession : MonoBehaviour
     private ConversationConclusionStrings m_ConversationConlusionStrings;
 
     public Cult Cult { get; private set; }
+    public CandidatePool CandidatePool => m_CandidateFactory.CandidatePool;
 
     public SubscriptionValue<Candidate> Candidate { get; private set; } = new SubscriptionValue<Candidate>();
     public SubscriptionValue<Conversation> Conversation { get; private set; } = new SubscriptionValue<Conversation>();
