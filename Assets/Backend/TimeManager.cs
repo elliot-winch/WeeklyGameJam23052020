@@ -15,7 +15,8 @@ public class TimeManager : MonoBehaviour
 
 	private float _timer;
 
-	void Start(){
+	void Start()
+	{
 		_timer = timeLimit;
 	}
 
@@ -24,8 +25,27 @@ public class TimeManager : MonoBehaviour
     {
         _timer -= Time.deltaTime;
 
-        Debug.Log((int)(_timer / 60));
+        int minutes = (int)(_timer / 60);
+        int seconds = (int)(_timer % 60);
 
+        string extraZero = "";
 
-    }
+        if(seconds < 10)
+        {
+        	extraZero = "0";
+        }
+
+        Debug.Log(minutes + ":" + extraZero + seconds);
+
+        if(_timer < 30)
+        {
+        	//turn tmp red
+        }
+
+        if(_timer < 0)
+        {
+        	//Times up!
+        }
+    
+	}	
 }
