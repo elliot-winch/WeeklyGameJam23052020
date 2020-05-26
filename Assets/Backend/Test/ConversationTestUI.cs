@@ -43,7 +43,7 @@ public class ConversationTestUI : MonoBehaviour
         foreach(Option option in choice.Options)
         {
             Button button = Instantiate(m_ButtonPrefab, m_ButtonParent);
-            button.GetComponentInChildren<Text>().text = option.Phrase;
+            button.GetComponentInChildren<TextMeshProUGUI>().text = option.Phrase;
             button.onClick.AddListener(() => { m_GameSession.Conversation.Value.SelectOption(option); });
         }
     }

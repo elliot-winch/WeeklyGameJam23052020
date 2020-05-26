@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b196c5f434bfe44318a5b1e7fd4d03ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1acd34240c2f4bda8173918186c8343, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -95,7 +95,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.617, g: 0.617, b: 0.617, a: 1}
+    m_NormalColor: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
     m_HighlightedColor: {r: 0.7176471, g: 0.1764706, b: 0.8588236, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_text: 'Option 2: There are greater beings out there, and our group is the only
     way to communicate with them.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1e3a41aef9d354292b59cdc73bd72749, type: 2}
-  m_sharedMaterial: {fileID: 2781751559612113216, guid: 1e3a41aef9d354292b59cdc73bd72749,
+  m_fontAsset: {fileID: 11400000, guid: ff9d92ac3662b4b43af2096a9d0639fd, type: 2}
+  m_sharedMaterial: {fileID: -8086721803611567481, guid: ff9d92ac3662b4b43af2096a9d0639fd,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 10
   m_fontSizeMax: 15
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
