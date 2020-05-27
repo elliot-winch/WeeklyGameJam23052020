@@ -23,6 +23,9 @@ public class Candidate
     public string SuccessResponse;
     public string FailureResponse;
     public string RejectedResponse;
+
+    public Portrait DefaultPortrait;  
+    public Portrait[] Portraits;
 }
 
 [Serializable]
@@ -45,4 +48,11 @@ public class MinMax
 {
     public int Min;
     public int Max;
+}
+
+[Serializable]
+public class Portrait
+{
+    public string ImageID;
+    public int ScoreToActivate;
 }
