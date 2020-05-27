@@ -5,16 +5,14 @@ using UnityEngine;
 public class Conversation 
 {
     private ChoicePool m_ChoicePool;
-    private IScoreGenerator m_Scorer;
     private Personality m_Personality;
 
     public SubscriptionValue<int> PersuasionLevel { get; private set; } = new SubscriptionValue<int>();
     public SubscriptionValue<Choice> Choice { get; private set; }
 
-    public Conversation(Candidate candidate, ChoicePool pool, IScoreGenerator scorer)
+    public Conversation(Candidate candidate, ChoicePool pool)
     {
         m_ChoicePool = pool;
-        m_Scorer = scorer;
         m_Personality = candidate.Personality;
 
         Choice opening;
@@ -38,7 +36,7 @@ public class Conversation
 
     private Choice GetNextChoice(Option option)
     {
-        int score = m_Scorer.GetScore(m_Personality, option);
+        int score = m_Personality * option.AppealingFactors;
 
         //The value of each choice is summed to make the current persuasion level
         PersuasionLevel.Value += score;
