@@ -13,6 +13,12 @@ public class TimeManager : MonoBehaviour
 	[SerializeField]
 	private TextMeshProUGUI _timeDisplay;
 
+	[SerializeField]
+	private GameObject _resultsGroup;
+
+	[SerializeField]
+	private GameObject _gameGroup;
+
 	private float _timer;
 
 	void Start()
@@ -35,16 +41,19 @@ public class TimeManager : MonoBehaviour
         	extraZero = "0";
         }
 
-        Debug.Log(minutes + ":" + extraZero + seconds);
+        _timeDisplay.text = (minutes + ":" + extraZero +""+ seconds);
 
         if(_timer < 30)
         {
         	//turn tmp red
+        	_timeDisplay.color = Color.red;
         }
 
         if(_timer < 0)
         {
         	//Times up!
+        	_gameGroup.SetActive(false);
+        	_resultsGroup.SetActive(true);
         }
     
 	}	
