@@ -124,16 +124,19 @@ public class ConversationTestUI : MonoBehaviour
 
     private void UpdateWealthCultMeter(int value)
     {
+        Debug.Log(value);
         _cultWealthImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
     }
 
     private void UpdateLoyaltyCultMeter(int value)
     {
+        Debug.Log(value);
         _cultLoyaltyImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
     }
 
     private void UpdateReputationCultMeter(int value)
     {
+        Debug.Log(value);
         _cultReputationImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
     }
 }

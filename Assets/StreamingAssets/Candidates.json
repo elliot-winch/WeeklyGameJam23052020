@@ -10,7 +10,7 @@
 			"RandomWealth": false,
 			"RandomLoyality": false,
 			"RandomReputation": false,
-			"RandomPersuasionRequirement": true,
+			"RandomPersuasionRequirement": false,
 			"Personality": {
 				"Naivety": 1,
 				"Disillusionment": 0,
