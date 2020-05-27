@@ -1,15 +1,5 @@
 ﻿using UnityEngine;
 
-//TEMP Testing
-public class TestScoreGenerator : IScoreGenerator
-{
-    public int GetScore(Personality personality, Option option)
-    {
-        return 0;
-    }
-}
-//end Temp
-
 public class GameSession : MonoBehaviour
 {
     [SerializeField]
@@ -47,7 +37,7 @@ public class GameSession : MonoBehaviour
 
         Candidate.Value = m_CandidateFactory.Generate();
 
-        Conversation.Value = new Conversation(Candidate.Value, m_ChoiceFactory.ChoicePool, new TestScoreGenerator());
+        Conversation.Value = new Conversation(Candidate.Value, m_ChoiceFactory.ChoicePool);
     }
 
     public void AttemptRecruitCandidate()

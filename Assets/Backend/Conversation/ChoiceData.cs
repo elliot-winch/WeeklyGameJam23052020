@@ -26,6 +26,9 @@ public class Option
     public string DefaultChoiceID;
     //Choices reached when a minimum score is suppased
     public AttainableChoice[] AttainableChoices;
+
+    //The personality elements to which this option appeals
+    public Personality AppealingFactors;
 }
 
 [Serializable]

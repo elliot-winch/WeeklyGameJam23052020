@@ -10,7 +10,13 @@
 			"RandomWealth": false,
 			"RandomLoyality": false,
 			"RandomReputation": false,
-			"RandomPersuasionRequirement": true
+			"RandomPersuasionRequirement": true,
+			"Personality": 
+			{
+				"Naivety": 1,
+				"Disillusionment": 0,
+				"Spirituality": -1
+			}
 		}
 	],
 	"FirstNames": [ "Dave" ],

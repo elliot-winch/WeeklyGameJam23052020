@@ -8,6 +8,11 @@
 				{
 					"Phrase": "Hi, how are you?",
 					"DefaultChoiceID": "2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": -1
+					},
 					"AttainableChoices": [
 						{
 							"ScoreRequired": 10,
