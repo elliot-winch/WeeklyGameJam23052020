@@ -11,11 +11,13 @@
 			"RandomLoyality": false,
 			"RandomReputation": false,
 			"RandomPersuasionRequirement": true,
-			"Personality": 
-			{
+			"Personality": {
 				"Naivety": 1,
 				"Disillusionment": 0,
 				"Spirituality": -1
+			},
+			"DefaultPortrait": {
+				"ImageID": "boy1"
 			}
 		}
 	],

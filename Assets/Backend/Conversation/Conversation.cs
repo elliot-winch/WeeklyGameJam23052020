@@ -8,6 +8,7 @@ public class Conversation
     private Personality m_Personality;
 
     public SubscriptionValue<int> PersuasionLevel { get; private set; } = new SubscriptionValue<int>();
+    public SubscriptionValue<int> PersuasionLevelDelta { get; private set; } = new SubscriptionValue<int>();
     public SubscriptionValue<Choice> Choice { get; private set; }
 
     public Conversation(Candidate candidate, ChoicePool pool)
@@ -40,8 +41,9 @@ public class Conversation
 
         //The value of each choice is summed to make the current persuasion level
         PersuasionLevel.Value += score;
+        PersuasionLevelDelta.Value = score;
 
-        //ordering the list with the highest score first means that as we compare, we check the better results first
+        //Ordering the list with the highest score first means that as we compare, we check the better results first
         IEnumerable<AttainableChoice> outcomes = option.AttainableChoices.OrderByDescending(outcome => outcome.ScoreRequired);
         
         foreach(AttainableChoice outcome in outcomes)

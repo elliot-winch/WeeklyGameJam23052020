@@ -8,6 +8,10 @@ using UnityEngine.UI;
 public class ConversationTestUI : MonoBehaviour
 {
     [SerializeField]
+    private GameSession m_GameSession;
+
+    [Header("Conversation")]
+    [SerializeField]
     private Button m_ButtonPrefab;
 
     [SerializeField]
@@ -22,6 +26,7 @@ public class ConversationTestUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI m_CandidateSpeechText;
 
+    [Header("Candidate Stats")]
     [SerializeField]
     private CandidateStatMeter _wealthMeter;
 
@@ -31,6 +36,7 @@ public class ConversationTestUI : MonoBehaviour
     [SerializeField]
     private CandidateStatMeter _loyaltyMeter;
 
+    [Header("Cult Stats")]
     [SerializeField]
     private Image _cultWealthImage;
 
@@ -40,9 +46,6 @@ public class ConversationTestUI : MonoBehaviour
     [SerializeField]
     private Image _cultReputationImage;
 
-    [SerializeField]
-    private GameSession m_GameSession;
-
     private void Awake()
     {
         m_GameSession.Candidate.Subscribe(SetupCandidate);
@@ -50,10 +53,8 @@ public class ConversationTestUI : MonoBehaviour
         m_GameSession.Conclusion.Subscribe(SetupConversationConclusion);
 
         m_GameSession.Cult.Wealth.Subscribe(UpdateWealthCultMeter);
-        m_GameSession.Cult.Loyality.Subscribe(UpdateWealthCultMeter);
-        m_GameSession.Cult.Reputation.Subscribe(UpdateWealthCultMeter);
-
-
+        m_GameSession.Cult.Loyality.Subscribe(UpdateLoyaltyCultMeter);
+        m_GameSession.Cult.Reputation.Subscribe(UpdateReputationCultMeter);
     }
 
     private void SetupCandidate(Candidate candidate)
@@ -65,6 +66,8 @@ public class ConversationTestUI : MonoBehaviour
             _wealthMeter?.SetCandidateStats(candidate.Wealth, m_GameSession.CandidatePool.WealthBounds.Max);
             _reputationMeter?.SetCandidateStats(candidate.Loyality, m_GameSession.CandidatePool.ReputationBounds.Max);
             _loyaltyMeter?.SetCandidateStats(candidate.Loyality, m_GameSession.CandidatePool.LoyalityBounds.Max);
+
+
         }
     }
 
@@ -133,5 +136,4 @@ public class ConversationTestUI : MonoBehaviour
     {
         _cultReputationImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
     }
-
 }
