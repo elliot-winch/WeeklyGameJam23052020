@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class ResultsScreen : MonoBehaviour
@@ -48,6 +49,7 @@ public class ResultsScreen : MonoBehaviour
     		currentFill += .01f;
     		wealthIm.fillAmount = currentFill;
     	}
+
 
 
     	currentFill = 0;
