@@ -9,20 +9,37 @@ public class ConversationTestUI : MonoBehaviour
 {
     [SerializeField]
     private Button m_ButtonPrefab;
+
     [SerializeField]
     private Transform m_ButtonParent;
+
     [SerializeField]
     private TextMeshProUGUI m_CandidateNameText;
+
     [SerializeField]
     private TextMeshProUGUI m_ConversationConclusionText;
+
     [SerializeField]
     private TextMeshProUGUI m_CandidateSpeechText;
+
     [SerializeField]
     private CandidateStatMeter _wealthMeter;
+
     [SerializeField]
     private CandidateStatMeter _reputationMeter;
+
     [SerializeField]
     private CandidateStatMeter _loyaltyMeter;
+
+    [SerializeField]
+    private Image _cultWealthImage;
+
+    [SerializeField]
+    private Image _cultLoyaltyImage;
+
+    [SerializeField]
+    private Image _cultReputationImage;
+
     [SerializeField]
     private GameSession m_GameSession;
 
@@ -31,6 +48,12 @@ public class ConversationTestUI : MonoBehaviour
         m_GameSession.Candidate.Subscribe(SetupCandidate);
         m_GameSession.Conversation.Subscribe(SetupConversation);
         m_GameSession.Conclusion.Subscribe(SetupConversationConclusion);
+
+        m_GameSession.Cult.Wealth.Subscribe(UpdateWealthCultMeter);
+        m_GameSession.Cult.Loyality.Subscribe(UpdateWealthCultMeter);
+        m_GameSession.Cult.Reputation.Subscribe(UpdateWealthCultMeter);
+
+
     }
 
     private void SetupCandidate(Candidate candidate)
@@ -50,10 +73,19 @@ public class ConversationTestUI : MonoBehaviour
         if(conversation != null)
         {
             conversation.Choice.Subscribe(SetupChoice);
+
         }
         else
         {
             ClearChoice();
+
+            //Create a new button in the normal button area to serve as the "next" button
+            //works when using the recruit/dismiss buttons to end a conversation
+            //but not if you reach the end of the text options and it gives the null reference error
+            Button next = Instantiate(m_ButtonPrefab, m_ButtonParent);
+            next.GetComponentInChildren<TextMeshProUGUI>().text = "Move to next Candidate";
+            next.onClick.AddListener(m_GameSession.NextCandidate);
+ 
         }
     }
 
@@ -66,12 +98,13 @@ public class ConversationTestUI : MonoBehaviour
     {
         ClearChoice();
 
+
         m_CandidateSpeechText.text = choice.Phrase;
 
         foreach (Option option in choice.Options)
         {
             Button button = Instantiate(m_ButtonPrefab, m_ButtonParent);
-            button.GetComponentInChildren<Text>().text = option.Phrase;
+            button.GetComponentInChildren<TextMeshProUGUI>().text = option.Phrase;
             button.onClick.AddListener(() => { m_GameSession.Conversation.Value.SelectOption(option); });
         }
     }
@@ -85,4 +118,20 @@ public class ConversationTestUI : MonoBehaviour
             Destroy(button.gameObject);
         }
     }
+
+    private void UpdateWealthCultMeter(int value)
+    {
+        _cultWealthImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
+    }
+
+    private void UpdateLoyaltyCultMeter(int value)
+    {
+        _cultLoyaltyImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
+    }
+
+    private void UpdateReputationCultMeter(int value)
+    {
+        _cultReputationImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
+    }
+
 }
