@@ -20,6 +20,7 @@ public class GameSession : MonoBehaviour
     public SubscriptionValue<Conversation> Conversation { get; private set; } = new SubscriptionValue<Conversation>();
     public SubscriptionValue<ConversationConclusion> Conclusion { get; private set; } = new SubscriptionValue<ConversationConclusion>();
 
+
     private void Awake()
     {
         m_CandidateFactory.Load();
@@ -49,6 +50,7 @@ public class GameSession : MonoBehaviour
         if(Conversation.Value.PersuasionLevel.Value >= Candidate.Value.PersuasionRequirement)
         {
             Cult.AddCandidate(Candidate.Value);
+            Debug.Log("candidate Added");
 
             Conclusion.Value = new ConversationConclusion(m_ConversationConlusionStrings, Candidate.Value, ConversationResult.Success);
         }

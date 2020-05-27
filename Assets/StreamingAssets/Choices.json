@@ -38,7 +38,7 @@
 			"Options": [
 				{
 					"Phrase": "We're absolutely a cult",
-					"DefaultChoiceID": "6",
+					"DefaultChoiceID": "5",
 					"AttainableChoices": [
 						{
 							"ScoreRequired": 10,
@@ -48,7 +48,7 @@
 				},
 				{
 					"Phrase": "Why do you say that?",
-					"DefaultChoiceID": "7",
+					"DefaultChoiceID": "4",
 					"AttainableChoices": [
 						{
 							"ScoreRequired": 10,
@@ -84,6 +84,60 @@
 					]
 				}
 			]
-		}
+		},
+		{
+			"ID": "4",
+			"Phrase": "I'm glad I found your group. I've been feeling really lost lately and I'm looking for something more meaningful in life.",
+			"IsStartingNode": true,
+			"Options": [
+				{
+					"Phrase": "We were all once lost like you. No one is truly 'found' until they join our group",
+					"DefaultChoiceID": "5",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "5"
+						}
+					]
+				},
+				{
+					"Phrase": "You'll never be able to find meaning.",
+					"DefaultChoiceID": "2",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "5",
+			"Phrase": "Thanks for your reassurance. Can you talk more about what you mean by 'found'? ",
+			"IsStartingNode": true,
+			"Options": [
+				{
+					"Phrase": "When one opens their mind to accept the reality that higher beings exist, one is 'found'.",
+					"DefaultChoiceID": "2",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "3"
+						}
+					]
+				},
+				{
+					"Phrase": "Society clearly has brainwashed you into thinking that extraterrestrial beings don't communicate with us already.",
+					"DefaultChoiceID": "2",
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 10,
+							"ChoiceID": "2"
+						}
+					]
+				}
+			]
+		},
 	]
 }
