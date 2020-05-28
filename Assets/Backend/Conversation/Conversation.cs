@@ -5,6 +5,7 @@ using UnityEngine;
 public class Conversation 
 {
     private const string CONVERSATION_END_ID = "-2";
+    private const string RECRUIT_ID = "-3";
 
     private GameSession m_GameSession;
     private ChoicePool m_ChoicePool;
@@ -41,6 +42,9 @@ public class Conversation
         if(nextChoiceID == CONVERSATION_END_ID)
         {
             m_GameSession.NextCandidate();
+        }
+        else if(nextChoiceID == RECRUIT_ID){
+            m_GameSession.AttemptRecruitCandidate();
         }
         else
         {

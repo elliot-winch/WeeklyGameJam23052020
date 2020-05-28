@@ -909,7 +909,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 1,
@@ -1102,7 +1102,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -1181,7 +1181,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 1,
@@ -1376,7 +1376,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 1,
@@ -1415,7 +1415,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -1453,7 +1453,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 1,
@@ -1491,7 +1491,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 2,
 						"Disillusionment": 2,
@@ -1529,7 +1529,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 2,
 						"Disillusionment": 2,
@@ -1568,7 +1568,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -1606,7 +1606,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 2,
 						"Disillusionment": 2,
@@ -1644,7 +1644,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -1683,7 +1683,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -1722,7 +1722,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -1760,7 +1760,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 1,
@@ -1799,7 +1799,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 2,
@@ -1837,7 +1837,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -1877,7 +1877,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 0,
@@ -1900,7 +1900,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -1915,7 +1915,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 2,
 						"Disillusionment": 0,
@@ -1923,7 +1923,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -1938,7 +1938,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -1955,7 +1955,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -1963,7 +1963,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -1978,7 +1978,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -1993,7 +1993,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 0,
@@ -2001,7 +2001,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2016,7 +2016,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2032,7 +2032,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2040,7 +2040,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2055,7 +2055,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2070,7 +2070,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 0,
@@ -2078,7 +2078,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2093,7 +2093,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2108,7 +2108,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -2116,7 +2116,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2131,7 +2131,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2146,7 +2146,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 0,
@@ -2154,7 +2154,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2169,7 +2169,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2184,7 +2184,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -2192,7 +2192,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2207,7 +2207,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2224,7 +2224,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -2232,7 +2232,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2247,7 +2247,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2263,7 +2263,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -2271,7 +2271,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2286,7 +2286,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2302,7 +2302,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -2310,7 +2310,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2325,7 +2325,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2340,7 +2340,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 1,
@@ -2363,7 +2363,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2387,7 +2387,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "194"
 						}
 					]
@@ -2402,7 +2402,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "195"
 						}
 					]
@@ -2426,7 +2426,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "194"
 						}
 					]
@@ -2441,7 +2441,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "198"
 						}
 					]
@@ -2464,7 +2464,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "199"
 						}
 					]
@@ -2479,7 +2479,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 2,
 							"ChoiceID": "202"
 						}
 					]
@@ -2494,7 +2494,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2502,7 +2502,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 4,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2517,7 +2517,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2540,7 +2540,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "204"
 						}
 					]
@@ -2555,7 +2555,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "205"
 						}
 					]
@@ -2570,7 +2570,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -2578,7 +2578,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 0,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2593,7 +2593,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2608,7 +2608,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2616,7 +2616,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2631,7 +2631,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2646,7 +2646,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2654,7 +2654,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2669,7 +2669,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2684,7 +2684,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -2692,7 +2692,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2707,7 +2707,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2722,7 +2722,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2730,7 +2730,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2745,7 +2745,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2760,7 +2760,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 0,
@@ -2768,7 +2768,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2783,7 +2783,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2798,7 +2798,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2806,7 +2806,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2821,7 +2821,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2836,7 +2836,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 2,
 						"Disillusionment": 1,
@@ -2844,7 +2844,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2859,7 +2859,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2874,7 +2874,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -2882,7 +2882,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2897,7 +2897,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2912,7 +2912,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -2920,7 +2920,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2935,7 +2935,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2950,7 +2950,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 2,
 						"Disillusionment": 1,
@@ -2958,7 +2958,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2973,7 +2973,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -2988,7 +2988,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": -1,
@@ -2996,7 +2996,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3011,7 +3011,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3027,7 +3027,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3035,7 +3035,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3050,7 +3050,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3065,7 +3065,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -3073,7 +3073,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3088,7 +3088,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3102,7 +3102,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -3110,7 +3110,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3125,7 +3125,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3140,7 +3140,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3148,7 +3148,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3163,7 +3163,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3178,7 +3178,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": -1,
@@ -3186,7 +3186,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3201,7 +3201,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3216,7 +3216,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3224,7 +3224,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3239,7 +3239,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3254,7 +3254,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": 0,
@@ -3262,7 +3262,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3277,7 +3277,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3291,7 +3291,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3299,7 +3299,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3314,7 +3314,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3329,7 +3329,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3337,7 +3337,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3352,7 +3352,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3367,7 +3367,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3375,7 +3375,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3390,7 +3390,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3405,7 +3405,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3413,7 +3413,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3428,7 +3428,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3442,7 +3442,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3450,7 +3450,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3465,7 +3465,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3479,7 +3479,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -3487,7 +3487,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3502,7 +3502,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3517,7 +3517,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3525,7 +3525,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3540,7 +3540,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3556,7 +3556,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -3564,7 +3564,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3579,7 +3579,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3595,7 +3595,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3603,7 +3603,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3618,7 +3618,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3633,7 +3633,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3641,7 +3641,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3656,7 +3656,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3671,7 +3671,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3679,7 +3679,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3694,7 +3694,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3711,7 +3711,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3719,7 +3719,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3734,7 +3734,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3749,7 +3749,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3757,7 +3757,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3772,7 +3772,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3787,7 +3787,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3795,7 +3795,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3810,7 +3810,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3825,7 +3825,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -3833,7 +3833,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3848,7 +3848,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3864,7 +3864,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 0,
 						"Disillusionment": 0,
@@ -3872,7 +3872,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3887,7 +3887,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3901,7 +3901,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3909,7 +3909,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3924,7 +3924,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3940,7 +3940,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -3948,7 +3948,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3963,7 +3963,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -3978,7 +3978,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": -1,
 						"Disillusionment": -1,
@@ -3986,7 +3986,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4001,7 +4001,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4016,7 +4016,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -4024,7 +4024,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4039,7 +4039,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4054,7 +4054,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -4062,7 +4062,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4077,7 +4077,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4092,7 +4092,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 1,
@@ -4100,7 +4100,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 5,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4115,7 +4115,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "-2"
 						}
 					]
@@ -4292,7 +4292,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "109"
 						}
 					]
@@ -4330,7 +4330,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "109"
 						}
 					]
@@ -4369,7 +4369,7 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 3,
+							"ScoreRequired": 1,
 							"ChoiceID": "109"
 						}
 					]
@@ -4587,7 +4587,7 @@
 			"Options": [
 				{
 					"Phrase": "Recruit",
-					"DefaultChoiceID": "-2",
+					"DefaultChoiceID": "-3",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,

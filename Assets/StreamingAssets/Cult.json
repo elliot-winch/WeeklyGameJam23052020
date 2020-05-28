@@ -1,7 +1,7 @@
 {
-	"StartingWealth": 10,
-	"StartingLoyality": 10,
-	"StartingReputation": 10,
+	"StartingWealth": 5,
+	"StartingLoyality": 5,
+	"StartingReputation": 5,
 	"Recruits": null,
 	"Wealth": { "Value": 0 },
 	"Loyality": { "Value": 0 },

@@ -10,7 +10,7 @@
 			"RandomWealth": true,
 			"RandomLoyality": true,
 			"RandomReputation": true,
-			"RandomPersuasionRequirement": true,
+			"RandomPersuasionRequirement": false,
 			"Personality": {
 				"Naivety": 1,
 				"Disillusionment": 0,
@@ -70,7 +70,7 @@
 			"RandomWealth": true,
 			"RandomLoyality": true,
 			"RandomReputation": true,
-			"RandomPersuasionRequirement": true,
+			"RandomPersuasionRequirement": false,
 			"Personality": {
 				"Naivety": 0,
 				"Disillusionment": 1,
@@ -275,18 +275,18 @@
 	"LastNames": [ "Smith", "Jones", "Brown","Johnson" ],
 	"WealthBounds": {
 		"Min": 0,
-		"Max": 100
+		"Max": 22
 	},
 	"LoyalityBounds": {
 		"Min": 0,
-		"Max": 100
+		"Max": 22
 	},
 	"ReputationBounds": {
 		"Min": 0,
-		"Max": 100
+		"Max": 22
 	},
 	"PersuasionRequirementBounds": {
-		"Min": 1,
+		"Min": 0,
 		"Max": 2
 	},
 }
