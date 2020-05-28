@@ -2,15 +2,15 @@
 	"Candidates": [
 		{
 			"FirstName": null,
-			"LastName": "Jones",
-			"Wealth": 10,
-			"Loyality": 10,
-			"Reputation": 10,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
 			"PersuasionRequirement": 0,
-			"RandomWealth": false,
-			"RandomLoyality": false,
-			"RandomReputation": false,
-			"RandomPersuasionRequirement": false,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
 			"Personality": {
 				"Naivety": 1,
 				"Disillusionment": 0,
@@ -26,6 +26,246 @@
 				},
 				{
 					"ImageID": "boy1b",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": 1,
+				"Disillusionment": -1,
+				"Spirituality": 0
+			},
+			"DefaultPortrait": {
+				"ImageID": "boy2b"
+			},
+			"Portraits": [
+				{
+					"ImageID": "boy2",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "boy2a",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": 0,
+				"Disillusionment": 1,
+				"Spirituality": -1
+			},
+			"DefaultPortrait": {
+				"ImageID": "boy3a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "boy3b",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "boy3",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": 0,
+				"Disillusionment": -1,
+				"Spirituality": 1
+			},
+			"DefaultPortrait": {
+				"ImageID": "girl1a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "girl1",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "girl1b",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": -1,
+				"Disillusionment": 0,
+				"Spirituality": 1
+			},
+			"DefaultPortrait": {
+				"ImageID": "girl2b"
+			},
+			"Portraits": [
+				{
+					"ImageID": "girl2",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "girl2c",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": -1,
+				"Disillusionment": 1,
+				"Spirituality": 0
+			},
+			"DefaultPortrait": {
+				"ImageID": "girl3a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "girl3b",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "girl3",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": 1,
+				"Disillusionment": 1,
+				"Spirituality": -2
+			},
+			"DefaultPortrait": {
+				"ImageID": "lady1a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "lady1",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "lady1b",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": 1,
+				"Disillusionment": -2,
+				"Spirituality": 1
+			},
+			"DefaultPortrait": {
+				"ImageID": "lady2a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "lady2b",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "lady2",
+					"ScoreToActivate": 1
+				}
+			]
+		},
+		{
+			"FirstName": null,
+			"LastName": null,
+			"Wealth": 0,
+			"Loyality": 0,
+			"Reputation": 0,
+			"PersuasionRequirement": 0,
+			"RandomWealth": true,
+			"RandomLoyality": true,
+			"RandomReputation": true,
+			"RandomPersuasionRequirement": true,
+			"Personality": {
+				"Naivety": -2,
+				"Disillusionment": 2,
+				"Spirituality": 2
+			},
+			"DefaultPortrait": {
+				"ImageID": "man2a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "man2b",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "man2",
 					"ScoreToActivate": 1
 				}
 			]
@@ -46,7 +286,7 @@
 		"Max": 100
 	},
 	"PersuasionRequirementBounds": {
-		"Min": 0,
-		"Max": 100
+		"Min": 1,
+		"Max": 2
 	},
 }
