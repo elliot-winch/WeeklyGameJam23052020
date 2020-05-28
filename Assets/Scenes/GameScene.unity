@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb43e42ad887248f79a721335b06e4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 15
+  timeLimit: 180
   _timeDisplay: {fileID: 1580406683}
   _resultsGroup: {fileID: 1182302850}
   _gameGroup: {fileID: 1182302851}

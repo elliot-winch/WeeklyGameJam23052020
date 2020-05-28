@@ -1,6 +1,6 @@
 {
 	"Choices": [
-		
+
 		{
 			"ID": "100",
 			"Phrase": "Hey, how's it going?",
@@ -161,7 +161,7 @@
 						{
 							"ScoreRequired": 1,
 							"ChoiceID": "115"
-						},
+						}
 					]
 				},
 
@@ -1096,7 +1096,7 @@
 
 
 
-{
+		{
 			"ID": "128",
 			"Phrase": "Really? Can I join this community?",
 			"Options": [
@@ -3172,7 +3172,7 @@
 		},
 
 
-			{
+		{
 			"ID": "182",
 			"Phrase": "Don't talk to me that way.",
 			"Options": [
@@ -3285,7 +3285,7 @@
 			]
 		},
 
-			{
+		{
 			"ID": "185",
 			"Phrase": "I do! Let me prove it to you.",
 			"Options": [
@@ -4655,8 +4655,6 @@
 				}
 			]
 		},
-
-
 		{
 			"ID": "307",
 			"Phrase": "Can you give me more information about that?",
@@ -4692,16 +4690,6 @@
 					]
 				}
 			]
-		},
-
-
-
-
-
-
-
-
-
-
+		}
 	]
 }

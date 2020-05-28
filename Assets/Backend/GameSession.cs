@@ -37,7 +37,7 @@ public class GameSession : MonoBehaviour
 
         Candidate.Value = m_CandidateFactory.Generate();
 
-        Conversation.Value = new Conversation(Candidate.Value, m_ChoiceFactory.ChoicePool);
+        Conversation.Value = new Conversation(this, Candidate.Value, m_ChoiceFactory.ChoicePool);
     }
 
     public void AttemptRecruitCandidate()

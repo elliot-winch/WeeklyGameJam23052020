@@ -17,9 +17,19 @@
 				"Spirituality": -1
 			},
 			"DefaultPortrait": {
-				"ImageID": "boy1"
-			}
-		},
+				"ImageID": "boy1a"
+			},
+			"Portraits": [
+				{
+					"ImageID": "boy1",
+					"ScoreToActivate": 0
+				},
+				{
+					"ImageID": "boy1b",
+					"ScoreToActivate": 1
+				}
+			]
+		}
 	],
 	"FirstNames": [ "Dave", "Charlie", "Georgie", "Bartholomew", "Harry", "Nina","Sara","Alex","Alicia","Felicia" ],
 	"LastNames": [ "Smith", "Jones", "Brown","Johnson" ],
