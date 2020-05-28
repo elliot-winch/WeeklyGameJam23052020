@@ -7,6 +7,10 @@ using UnityEngine.UI;
 /// </summary>
 public class ConversationTestUI : MonoBehaviour
 {
+
+    [HideInInspector]
+    public int wealthVal, reputationVal, loyaltyVal;
+
     [SerializeField]
     private GameSession m_GameSession;
 
@@ -124,19 +128,19 @@ public class ConversationTestUI : MonoBehaviour
 
     private void UpdateWealthCultMeter(int value)
     {
-        Debug.Log(value);
         _cultWealthImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
+        wealthVal = value;
     }
 
     private void UpdateLoyaltyCultMeter(int value)
     {
-        Debug.Log(value);
         _cultLoyaltyImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
+        loyaltyVal = value;
     }
 
     private void UpdateReputationCultMeter(int value)
     {
-        Debug.Log(value);
         _cultReputationImage.fillAmount = (float)value / (float)m_GameSession.Cult.Max;
+        reputationVal = value;
     }
 }

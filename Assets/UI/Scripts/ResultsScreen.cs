@@ -10,6 +10,13 @@ public class ResultsScreen : MonoBehaviour
 {
 	public float animationInterval = .08f;
 
+	public Sprite patheticSprite;
+	public Sprite mediocreSprite;
+	public Sprite legendarySprite;
+
+	[SerializeField]
+	private Image _cultImage;
+
 	[SerializeField]
 	private Image _wealthMeter;
 
@@ -28,6 +35,9 @@ public class ResultsScreen : MonoBehaviour
 	[SerializeField]
 	private TextMeshProUGUI _cultEvaluation;
 
+	[SerializeField]
+	private ConversationTestUI _gameUI;
+
 	private int _wealthVal = 90;
 	private int _reputationVal = 75;
 	private int _loyaltyVal = 70;
@@ -41,17 +51,14 @@ public class ResultsScreen : MonoBehaviour
 
     	_playAgainButton.onClick.AddListener(RestartGame);
 
-    	//enter welath, reputation , and lyalty vals here
+    	_wealthVal = _gameUI.wealthVal;
+    	_loyaltyVal = _gameUI.loyaltyVal;
+    	_reputationVal = _gameUI.reputationVal;
 
     	StartCoroutine(MeterDisplay(_wealthMeter, _wealthVal));
     	StartCoroutine(MeterDisplay(_reputationMeter, _reputationVal));
     	StartCoroutine(MeterDisplay(_loyaltyMeter, _loyaltyVal));
 
-    }
-
-    void Update()
-    {
-    	
     }
 
     IEnumerator MeterDisplay(Image meter, int val) {
@@ -84,24 +91,26 @@ public class ResultsScreen : MonoBehaviour
     	if(score < .33f){
     		_cultRanking.text = "Cult Ranking: Pathetic";
     		_cultEvaluation.text = "Your cult is pathetic. Your cult members will probably revolt against your authority at some point, and then you'll have to get a real job.";
+    		_cultImage.gameObject.SetActive(true);
+    		_cultImage.sprite = patheticSprite;
     	}
 
     	else if(score < .66f){
     		_cultRanking.text = "Cult Ranking: Mediocre";
     		_cultEvaluation.text = "Your cult is mediocre. If you're lucky, maybe someone will make a podcast about it, but it's definitely not going down in history as one of the 'greats'.";
-
+    		_cultImage.gameObject.SetActive(true);
+    		_cultImage.sprite = mediocreSprite;
     	}
 
     	else{
     		_cultRanking.text = "Cult Ranking: Legendary";
     		_cultEvaluation.text = "Your cult is legendary. Your members are so brainwashed that they'll still speak highly of you in the documentaries that are made after your death.";
-
+    		_cultImage.gameObject.SetActive(true);
+    		_cultImage.sprite = legendarySprite;
     	}
 
 
     }
-
-
 
     private void RestartGame(){
     	SceneManager.LoadScene("GameScene");

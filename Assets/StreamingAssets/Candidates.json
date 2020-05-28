@@ -19,10 +19,10 @@
 			"DefaultPortrait": {
 				"ImageID": "boy1"
 			}
-		}
+		},
 	],
-	"FirstNames": [ "Dave" ],
-	"LastNames": [ "Smith" ],
+	"FirstNames": [ "Dave", "Charlie", "Georgie", "Bartholomew", "Harry", "Nina","Sara","Alex","Alicia","Felicia" ],
+	"LastNames": [ "Smith", "Jones", "Brown","Johnson" ],
 	"WealthBounds": {
 		"Min": 0,
 		"Max": 100
