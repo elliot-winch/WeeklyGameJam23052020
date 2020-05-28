@@ -29,7 +29,7 @@ public class CandidateFactory : MonoBehaviour
 
         Random random = seed.HasValue ? new Random(seed.Value) : m_Random;
 
-        Candidate candidate = m_AvailableCandidates[random.Next(0, CandidatePool.Candidates.Length)];
+        Candidate candidate = m_AvailableCandidates[random.Next(0, m_AvailableCandidates.Count)];
 
         m_AvailableCandidates.Remove(candidate);
 
