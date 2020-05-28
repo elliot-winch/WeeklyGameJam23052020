@@ -105,6 +105,10 @@ public class ConversationTestUI : MonoBehaviour
     {
         ClearChoice();
 
+        if(choice == null)
+        {
+            return;
+        }
 
         m_CandidateSpeechText.text = choice.Phrase;
 

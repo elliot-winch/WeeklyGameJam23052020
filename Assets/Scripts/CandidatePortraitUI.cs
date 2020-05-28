@@ -27,6 +27,8 @@ public class CandidatePortraitUI : MonoBehaviour
 
     private void SetPortrait(Candidate candidate, int choiceScore = 0)
     {
+        Debug.Log("Set Portrait: " + candidate?.FirstName + " score" + choiceScore);
+
         m_CurrentImage?.gameObject.SetActive(false);
 
         if (candidate == null)
@@ -35,8 +37,6 @@ public class CandidatePortraitUI : MonoBehaviour
         }
 
         string portraitID = GetPortraitID(candidate, choiceScore);
-
-        Debug.Log(portraitID);
 
         m_CurrentImage = m_Portraits.FirstOrDefault(image => image.name == portraitID);
 
@@ -48,13 +48,13 @@ public class CandidatePortraitUI : MonoBehaviour
         if(candidate.Portraits != null)
         {
             //Find the first scoreToActivate that exceeds the choiceScore
-            string portraitID = candidate.Portraits
-                .OrderByDescending(portrait => portrait.ScoreToActivate)
-                .FirstOrDefault(portrait => portrait.ScoreToActivate >= choiceScore).ImageID;
+            Portrait portrait = candidate.Portraits
+                .OrderByDescending(p => p.ScoreToActivate)
+                .FirstOrDefault(p => p.ScoreToActivate <= choiceScore);
 
-            if(string.IsNullOrWhiteSpace(portraitID) == false)
+            if(portrait != null)
             {
-                return portraitID;
+                return portrait.ImageID;
             }
         }
 
