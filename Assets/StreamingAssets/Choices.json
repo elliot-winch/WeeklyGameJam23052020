@@ -1,13 +1,1319 @@
 {
 	"Choices": [
+		
 		{
-			"ID": "1",
-			"Phrase": "Hello there",
+			"ID": "100",
+			"Phrase": "Hey, how's it going?",
 			"IsStartingNode": true,
 			"Options": [
 				{
-					"Phrase": "Hi, how are you?",
-					"DefaultChoiceID": "2",
+					"Phrase": "Oh, you know, just thinking about the impending apocalypse.",
+					"DefaultChoiceID": "102",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 0,
+							"ChoiceID": "101"
+						}
+					]
+				},
+				{
+					"Phrase": "It's going well. What do you think of this warm weather we're having?",
+					"DefaultChoiceID": "103",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": -1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "104"
+						},
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "105"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "101",
+			"Phrase": "Woah what do you mean? That sounds scary",
+			"Options": [
+				{
+					"Phrase": "Yeah it's hopeless. We might as well make the most of the time we have and live life the way we want, not the way society wants us to live.",
+					"DefaultChoiceID": "106",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "107"
+						}
+					]
+				},
+				{
+					"Phrase": "The anti-christ heartworm disease is spreading like a virus and making people destroy the world.",
+					"DefaultChoiceID": "111",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "109"
+						},
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "111"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "102",
+			"Phrase": "What are you talking about? That's not real, you're being dramatic.",
+			"Options": [
+				{
+					"Phrase": "Fine believe whatever you want... I hope you change your mind before it's too late...",
+					"DefaultChoiceID": "112",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "113"
+						}
+					]
+				},
+				{
+					"Phrase": "The anti-christ heartworm disease is spreading like a virus and making people destroy the world.",
+					"DefaultChoiceID": "111",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "109"
+						},
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "111"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "103",
+			"Phrase": "The sun just reminds me how dark it is in my heart.",
+			"Options": [
+				{
+					"Phrase": "What's wrong?",
+					"DefaultChoiceID": "114",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "114"
+						}
+					]
+				},
+				{
+					"Phrase": "I know just the thing you need.",
+					"DefaultChoiceID": "116",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "115"
+						},
+					]
+				},
+
+				{
+					"Phrase": "Can I give you a hug?",
+					"DefaultChoiceID": "117",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "116"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "104",
+			"Phrase": "It's a bit too hot for me. I prefer cold, rainy weather.",
+			"Options": [
+				{
+					"Phrase": "I agree. The rain awakens the mystic mortal of ecstacy.",
+					"DefaultChoiceID": "119",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "118"
+						}
+					]
+				},
+				{
+					"Phrase": "Warm weather is just global warming that's going to kill us.",
+					"DefaultChoiceID": "120",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "121"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "105",
+			"Phrase": "It's gorgeous. I'm going to ride my bike to the mall today.",
+			"Options": [
+				{
+					"Phrase": "Ah yes, malls. The physical manifestation of consumer bondage.",
+					"DefaultChoiceID": "122",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "122"
+						}
+					]
+				},
+				{
+					"Phrase": "Warm weather is just global warming that's going to kill us.",
+					"DefaultChoiceID": "120",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "121"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "106",
+			"Phrase": "Woah what do you mean? That sounds scary?",
+			"Options": [
+				{
+					"Phrase": "Wow you're such a normie. Congratulations I guess.",
+					"DefaultChoiceID": "124",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "123"
+						}
+					]
+				},
+				{
+					"Phrase": "Marriage is just another way for the government to control us.",
+					"DefaultChoiceID": "124",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "125"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "107",
+			"Phrase": "Totally, this society is so repressive. I need to break free.",
+			"Options": [
+				{
+					"Phrase": "Tell me about it. We need to plan an upheaval of society.",
+					"DefaultChoiceID": "126",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "127"
+						}
+					]
+				},
+				{
+					"Phrase": "I'm glad you asked. I know a community of people practicing the art of sokosmo to one day defeat the anti-christ heartworm.",
+					"DefaultChoiceID": "128",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "128"
+						}
+					]
+				},
+				{
+					"Phrase": "Do you know anyone else living on the periphery of society?",
+					"DefaultChoiceID": "129",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "130"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "108",
+			"Phrase": "Oh my gosh. Is there anything we can do to stop it?",
+			"Options": [
+				{
+					"Phrase": "I'm not sure, but I do know what we can do to hide from it.",
+					"DefaultChoiceID": "131",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "131"
+						}
+					]
+				},
+				{
+					"Phrase": "I'm a doctor. A doctor of philosophy.",
+					"DefaultChoiceID": "133",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "132"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+
+		{
+			"ID": "109",
+			"Phrase": "I think you might be losing it... do you want me to call a doctor?",
+			"Options": [
+				{
+					"Phrase": "Oh, I see you're just an institutionalized normie. That's too bad.",
+					"DefaultChoiceID": "134",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "134"
+						}
+					]
+				},
+				{
+					"Phrase": "I'm a doctor. A doctor of philosophy.",
+					"DefaultChoiceID": "133",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "132"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "111",
+			"Phrase": "People aren't destroying the world, that's a hoax! Stop spreading fake news.",
+			"Options": [
+				{
+					"Phrase": "Oh, I see you're just an institutionalized normie. That's too bad.",
+					"DefaultChoiceID": "134",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "134"
+						}
+					]
+				},
+				{
+					"Phrase": "It's not the people, it's the anti-christ heartworm controlling them! We need to save humanity before it's to late.",
+					"DefaultChoiceID": "135",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "136"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "112",
+			"Phrase": "...I don't want it to be too late. Can you tell me more about this?",
+			"Options": [
+				{
+					"Phrase": "People become infected when the heartworm enters their eyes through the media. It eats your brains and kills you.",
+					"DefaultChoiceID": "137",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "138"
+						}
+					]
+				},
+				{
+					"Phrase": "Are you sure you're ready to hear this? There's no turning back.",
+					"DefaultChoiceID": "139",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "139"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "113",
+			"Phrase": "You're just trying to scare me. I'm not afraid of anything.",
+			"Options": [
+				{
+					"Phrase": "I wish I was just trying to scare you... In time you will see yourself.",
+					"DefaultChoiceID": "140",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "140"
+						}
+					]
+				},
+				{
+					"Phrase": "Fine, be like that. It's your loss.",
+					"DefaultChoiceID": "142",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "141"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "114",
+			"Phrase": "My partner just told me that they no longer believe in polygamy. Our whole relationship is a lie.",
+			"Options": [
+				{
+					"Phrase": "Wow, the betrayal! I know a place where everyone is polygamous.",
+					"DefaultChoiceID": "143",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "143"
+						}
+					]
+				},
+				{
+					"Phrase": "Why is that a bad thing? Loyaly is very important.",
+					"DefaultChoiceID": "145",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "144"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "115",
+			"Phrase": "Really? What is it?",
+			"Options": [
+				{
+					"Phrase": "You need a community of people bonded by brotherhood.",
+					"DefaultChoiceID": "143",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "143"
+						}
+					]
+				},
+				{
+					"Phrase": "It's a cult.",
+					"DefaultChoiceID": "146",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "147"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "116",
+			"Phrase": "I could really use a hug right now.",
+			"Options": [
+				{
+					"Phrase": "Of course. You can rely on me.",
+					"DefaultChoiceID": "148",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "148"
+						}
+					]
+				},
+				{
+					"Phrase": "Ha! You are weak. I knew it.",
+					"DefaultChoiceID": "150",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "149"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "117",
+			"Phrase": "Uhh I barely know you. No thanks.",
+			"Options": [
+				{
+					"Phrase": "Wow ok then I guess we'll never get to know each other.",
+					"DefaultChoiceID": "150",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "151"
+						}
+					]
+				},
+				{
+					"Phrase": "Would you like to get to know each other? I can make it worth your while.",
+					"DefaultChoiceID": "152",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "153"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "118",
+			"Phrase": "That's what that is? I always had a slight tingly sensation every time it rains but I never knew why.",
+			"Options": [
+				{
+					"Phrase": "You are a wise deciple. Can I take you back to my commune to share more with you?",
+					"DefaultChoiceID": "155",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "154"
+						}
+					]
+				},
+				{
+					"Phrase": "That's curious. Have you ever wanted to understand the sensation more?",
+					"DefaultChoiceID": "155",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "156"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "119",
+			"Phrase": "What is that?",
+			"Options": [
+				{
+					"Phrase": "I can take you somewhere to explain if you'd like.",
+					"DefaultChoiceID": "157",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "158"
+						}
+					]
+				},
+				{
+					"Phrase": "It's a secret. You have to become a member of the order to be shown.",
+					"DefaultChoiceID": "159",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "159"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "120",
+			"Phrase": "What's global warming?",
+			"Options": [
+				{
+					"Phrase": "Global warming is a goverment plot to kill everyone except the rich establishment elite.",
+					"DefaultChoiceID": "161",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "160"
+						}
+					]
+				},
+				{
+					"Phrase": "It is the rising of the Earth's temperature largely due to human pollution.",
+					"DefaultChoiceID": "161",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "162"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "121",
+			"Phrase": "Global warming is a conspiracy. How can a flat object change temperatue?",
+			"Options": [
+				{
+					"Phrase": "Exactly! It's all lies. I like the way you think. We could use someone like you...",
+					"DefaultChoiceID": "163",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "163"
+						}
+					]
+				},
+				{
+					"Phrase": "The world isn't flat... it's a cube. I'm worried about who is filling your mind with this nonsense.",
+					"DefaultChoiceID": "164",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "165"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "122",
+			"Phrase": "Um excuse me but shopping is a human right. How else will people know I'm rich?",
+			"Options": [
+				{
+					"Phrase": "Wealth is an imagined concept for capitalist control.",
+					"DefaultChoiceID": "166",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "166"
+						}
+					]
+				},
+				{
+					"Phrase": "I hope you find being rich fulfilling enough...",
+					"DefaultChoiceID": "167",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "167"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "123",
+			"Phrase": "I don't want to be a normie! I want to be enlightned!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "124",
+			"Phrase": "Wow that was rude... You don't know what you're talking about.",
+			"Options": [
+				{
+					"Phrase": "Poor thing. You will never understand.",
+					"DefaultChoiceID": "168",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "168"
+						}
+					]
+				},
+				{
+					"Phrase": "Actually I do. I can show you, but I need your trust first.",
+					"DefaultChoiceID": "170",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "169"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "125",
+			"Phrase": "No way, is that true?",
+			"Options": [
+				{
+					"Phrase": "Yes. I can bring you the lord and show you the truth.",
+					"DefaultChoiceID": "170",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "171"
+						}
+					]
+				},
+				{
+					"Phrase": "Absolutely. I can teach you more about government control. Are you interested?",
+					"DefaultChoiceID": "172",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "171"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "126",
+			"Phrase": "No I just want to escape from society, I don't need to destroy it.",
+			"Options": [
+				{
+					"Phrase": "I can help with that. I know a community that creates its own universe outside society.",
+					"DefaultChoiceID": "172",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "173"
+						}
+					]
+				},
+				{
+					"Phrase": "To escape from society, you must destroy it. I don't know if you have what it takes...",
+					"DefaultChoiceID": "174",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "175"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "127",
+			"Phrase": "Yes! I've actually been working on a plan.",
+			"Options": [
+				{
+					"Phrase": "I know some people who would love to hear your plan.",
+					"DefaultChoiceID": "177",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "176"
+						}
+					]
+				},
+				{
+					"Phrase": "You can't make a plan on your own. You need to follow a higher power.",
+					"DefaultChoiceID": "177",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "178"
+						}
+					]
+				}
+			]
+		},
+
+
+
+{
+			"ID": "128",
+			"Phrase": "Really? Can I join this community?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "129",
+			"Phrase": "No. As much as I talk about wanting to break free, I have too much going on in my life to actually do it.",
+			"Options": [
+				{
+					"Phrase": "You can break free of that. It will be worth it. The Lord will be with you.",
+					"DefaultChoiceID": "180",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "179"
+						}
+					]
+				},
+				{
+					"Phrase": "You sound weak. You need to grow strong to break free of the cage of society.",
+					"DefaultChoiceID": "180",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "181"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "130",
+			"Phrase": "No, but I wish I did.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "131",
+			"Phrase": "Really? What is it? Tell me!",
+			"Options": [
+				{
+					"Phrase": "I don't think you've proven yourself worth to know.",
+					"DefaultChoiceID": "182",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "183"
+						}
+					]
+				},
+				{
+					"Phrase": "First you must go through initiation and then I can tell you. Come with me.",
+					"DefaultChoiceID": "184",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "185"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "132",
+			"Phrase": "You must be so wise! I trust you!",
+			"Options": [
+				{
+					"Phrase": "Good. Trust is the foundation for loyalty. I have something I would like to show you.",
+					"DefaultChoiceID": "186",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "186"
+						}
+					]
+				},
+				{
+					"Phrase": "Hmmm you seem almost too trusting. I worry about your loyaly.",
+					"DefaultChoiceID": "187",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "187"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "133",
+			"Phrase": "Oh really? Sounds more like you're a doctor of arrogance.",
+			"Options": [
+				{
+					"Phrase": "Ah some people just never want to learn... so sad.",
+					"DefaultChoiceID": "188",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "188"
+						}
+					]
+				},
+				{
+					"Phrase": "Arrogance is just another word for intellect.",
+					"DefaultChoiceID": "189",
 					"AppealingFactors": {
 						"Naivety": 1,
 						"Disillusionment": 0,
@@ -15,129 +1321,3387 @@
 					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "3"
-						}
-					]
-				},
-				{
-					"Phrase": "You better join this cult, bitch",
-					"DefaultChoiceID": "4",
-					"AttainableChoices": [
-						{
-							"ScoreRequired": 10,
-							"ChoiceID": "5"
+							"ScoreRequired": 3,
+							"ChoiceID": "190"
 						}
 					]
 				}
 			]
 		},
+
+
 		{
-			"ID": "2",
-			"Phrase": "I'm okay. I am concerned you guys are a cult.",
+			"ID": "134",
+			"Phrase": "Um excuse me that's rude.",
 			"Options": [
 				{
-					"Phrase": "We're absolutely a cult",
-					"DefaultChoiceID": "5",
+					"Phrase": "Sometimes we must be harsh to reveal deeper truths about the universe.",
+					"DefaultChoiceID": "191",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "3"
+							"ScoreRequired": 4,
+							"ChoiceID": "192"
 						}
 					]
 				},
 				{
-					"Phrase": "Why do you say that?",
-					"DefaultChoiceID": "4",
+					"Phrase": "Yeah well you were rude first.",
+					"DefaultChoiceID": "193",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "3"
+							"ScoreRequired": 3,
+							"ChoiceID": "193"
 						}
 					]
 				}
 			]
 		},
+
+
+
+
 		{
-			"ID": "3",
-			"Phrase": "Yo yo yo",
+			"ID": "135",
+			"Phrase": "I don't believe a word you're saying. Get lost!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "136",
+			"Phrase": "That is terrifying! What can I do to protect myself?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "137",
+			"Phrase": "That's bogus. You're a freak, I'm leaving!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "138",
+			"Phrase": "AHHH How can we be safe? I trust you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 2,
+						"Disillusionment": 2,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "139",
+			"Phrase": "Yes I can handle it.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 2,
+						"Disillusionment": 2,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "140",
+			"Phrase": "Fine. Be like that. BYE",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "141",
+			"Phrase": "WAIT! I'm sorry. I take it back!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 2,
+						"Disillusionment": 2,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "142",
+			"Phrase": "Fine. Be like that. BYE.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "143",
+			"Phrase": "OMG show me this place! I would give up everything to live there.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "144",
+			"Phrase": "You're right. I guess I need to be more mature.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "145",
+			"Phrase": "Hmmm... Maybe you're the normie.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "146",
+			"Phrase": "Woah! You must be dangerous! Oh no.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 2,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "147",
+			"Phrase": "That's fascinating, tell me more.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "148",
+			"Phrase": "Wow you are a spiritual angel, thank you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "149",
+			"Phrase": "*starts crying* Teach me how to be strong!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 2,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "150",
+			"Phrase": "The disrespect! I bid you farewell.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "151",
+			"Phrase": "Ok bye.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "152",
+			"Phrase": "I feel uncomfortable... I'm going to leave now.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "153",
+			"Phrase": "...What",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "154",
+			"Phrase": "Yeah that sounds cool. What is your commune like?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "155",
+			"Phrase": "No.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "156",
+			"Phrase": "Actually all the time...",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "157",
+			"Phrase": "No thanks I don't go places with strangers.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "158",
+			"Phrase": "Yes please I need to know.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "159",
+			"Phrase": "Can I be a member of the order??",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "160",
+			"Phrase": "I knew it!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "161",
+			"Phrase": "That sounds like a conspiracy.",
+			"Options": [
+				{
+					"Phrase": "You aren't very smart, are you?",
+					"DefaultChoiceID": "194",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": -1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "194"
+						}
+					]
+				},
+				{
+					"Phrase": "Conspiracies are often true you know...",
+					"DefaultChoiceID": "196",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "195"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "162",
+			"Phrase": "That sounds science-y. I don't believe in science.",
+			"Options": [
+				{
+					"Phrase": "You aren't very smart, are you?",
+					"DefaultChoiceID": "194",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": -1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "194"
+						}
+					]
+				},
+				{
+					"Phrase": "You're smart. This was a test. ",
+					"DefaultChoiceID": "198",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "198"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "163",
+			"Phrase": "What do you mean 'we'? What are you talking about?",
+			"Options": [
+				{
+					"Phrase": "The order, my darling. Are you interested?",
+					"DefaultChoiceID": "200",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "199"
+						}
+					]
+				},
+				{
+					"Phrase": "My family. I don't know if you have what it takes, though. ",
+					"DefaultChoiceID": "201",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "202"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "164",
+			"Phrase": "I don't need your help.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 4,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss ",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "165",
+			"Phrase": "It's a cube? How do you know?",
+			"Options": [
+				{
+					"Phrase": "You're not very smart, are you?",
+					"DefaultChoiceID": "203",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "204"
+						}
+					]
+				},
+				{
+					"Phrase": "Let me bring you to the Phoenix. They will show you.",
+					"DefaultChoiceID": "206",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "205"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "166",
+			"Phrase": "That's not true... is it? Or has my whole life been a lie?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "167",
+			"Phrase": "What a jerk. I'm calling my mom.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "168",
+			"Phrase": "*cries* You're mean!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "169",
+			"Phrase": "I trust you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "170",
+			"Phrase": "I don''t know if I trust you yet.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "171",
+			"Phrase": "Yes",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "172",
+			"Phrase": "I don't know about that.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "173",
+			"Phrase": "That sounds incredible.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 2,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "174",
+			"Phrase": "*cries* You're mean!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "175",
+			"Phrase": "I have what it takes! I can prove it to you!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "176",
+			"Phrase": "That sounds awesome, can I meet them?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 2,
+						"Disillusionment": 1,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "177",
+			"Phrase": "No thanks",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": -1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "178",
+			"Phrase": "Wow you're so right!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "179",
+			"Phrase": "I pray to the milky heavens you're right.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "180",
+			"Phrase": "I don't believe you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "181",
+			"Phrase": "Wow you're so right!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+			{
+			"ID": "182",
+			"Phrase": "Don't talk to me that way.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "183",
+			"Phrase": "I do! Let me prove it to you!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "184",
+			"Phrase": "Don't talk to me that way.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+			{
+			"ID": "185",
+			"Phrase": "I do! Let me prove it to you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "186",
+			"Phrase": "Wow, ok, what is it?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "187",
+			"Phrase": "I promise I am loyal! You have my word.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "188",
+			"Phrase": "What a jerk...",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "189",
+			"Phrase": "You are delusional",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "190",
+			"Phrase": "Maybe you're right...",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "191",
+			"Phrase": "You are delusional",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "192",
+			"Phrase": "Maybe you're right...",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "193",
+			"Phrase": "What a jerk...",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "194",
+			"Phrase": "Don't talk to me that way.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "195",
+			"Phrase": "That's true... like the moon landing.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "196",
+			"Phrase": "I don't believe you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "197",
+			"Phrase": "Don't talk to me that way.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "198",
+			"Phrase": "I do! Let me prove it to you!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "199",
+			"Phrase": "Absolutely. I knew the Lord would send someone like you.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "200",
+			"Phrase": "This feels sketchy....",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "201",
+			"Phrase": "Don't talk to me that way.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "202",
+			"Phrase": "I do! let me prove it to you!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "203",
+			"Phrase": "Don't talk to me that way.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": -1,
+						"Disillusionment": -1,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "204",
+			"Phrase": "I do! Let me prove it to you!",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "205",
+			"Phrase": "Yes Lawd! Praise be.",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "206",
+			"Phrase": "Who is the Phoenix...?",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 5,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "210",
 			"IsStartingNode": true,
+			"Phrase": "What is this? A cult?",
 			"Options": [
 				{
-					"Phrase": "Yo my dude",
-					"DefaultChoiceID": "2",
+					"Phrase": "Some say cult. We prefer 'survivalists'.",
+					"DefaultChoiceID": "102",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "2"
+							"ScoreRequired": 1,
+							"ChoiceID": "101"
 						}
 					]
 				},
 				{
-					"Phrase": "Good golly!",
-					"DefaultChoiceID": "2",
+					"Phrase": "Cults aren't cool anymore. This is a group for those seeking enlightenment.",
+					"DefaultChoiceID": "211",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 2
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "2"
+							"ScoreRequired": 1,
+							"ChoiceID": "212"
 						}
 					]
 				}
 			]
 		},
+
+
 		{
-			"ID": "4",
+			"ID": "211",
+			"Phrase": "What if I don't want to be enlightened?",
+			"Options": [
+				{
+					"Phrase": "Sounds like you're a normie then.",
+					"DefaultChoiceID": "124",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "123"
+						}
+					]
+				},
+				{
+					"Phrase": "That's fine. I'll just be here thinking about the apocolypse and how you're going to die in it.",
+					"DefaultChoiceID": "102",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "101"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "212",
+			"Phrase": "What kind of enlightenment?",
+			"Options": [
+				{
+					"Phrase": "Spiritual. Breaking free from society to live your own life.",
+					"DefaultChoiceID": "129",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "107"
+						}
+					]
+				},
+				{
+					"Phrase": "If you are willing to accept the existence of higher beings, you will discover yourself.",
+					"DefaultChoiceID": "102",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "109"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "213",
+			"IsStartingNode": true,
+			"Phrase": "Who are you?",
+			"Options": [
+				{
+					"Phrase": "I have been described as the second coming.",
+					"DefaultChoiceID": "214",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 2
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "215"
+						}
+					]
+				},
+				{
+					"Phrase": "I'm no one. What matters is who are YOU?",
+					"DefaultChoiceID": "216",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "216"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "214",
+			"Phrase": "That's fake... Jesus isn't real",
+			"Options": [
+				{
+					"Phrase": "Who said I was talking about Jesus?",
+					"DefaultChoiceID": "109",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "109"
+						}
+					]
+				},
+				{
+					"Phrase": "I am real! I am here to stop global warming.",
+					"DefaultChoiceID": "120",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 2,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "121"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "215",
+			"Phrase": "I knew Jesus would return!",
+			"Options": [
+				{
+					"Phrase": "Who said I was talking about Jesus?",
+					"DefaultChoiceID": "109",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": -1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "109"
+						}
+					]
+				},
+				{
+					"Phrase": "I am real! I am here to stop global warming.",
+					"DefaultChoiceID": "120",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 2,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "121"
+						}
+					]
+				}
+			]
+		},
+
+
+
+		{
+			"ID": "216",
+			"Phrase": "I don't know who I am...",
+			"Options": [
+				{
+					"Phrase": "If you are willing to accept the existence of higher beings, you will discover yourself.",
+					"DefaultChoiceID": "102",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 3,
+							"ChoiceID": "109"
+						}
+					]
+				},
+				{
+					"Phrase": "Tell me what's bothering you.",
+					"DefaultChoiceID": "114",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "114"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+		{
+			"ID": "300",
 			"Phrase": "I'm glad I found your group. I've been feeling really lost lately and I'm looking for something more meaningful in life.",
 			"IsStartingNode": true,
 			"Options": [
 				{
 					"Phrase": "We were all once lost like you. No one is truly 'found' until they join our group",
-					"DefaultChoiceID": "5",
+					"DefaultChoiceID": "301",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 1,
+						"Spirituality": 1
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "5"
+							"ScoreRequired": 1,
+							"ChoiceID": "301"
 						}
 					]
 				},
 				{
 					"Phrase": "You'll never be able to find meaning.",
-					"DefaultChoiceID": "2",
+					"DefaultChoiceID": "303",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 2,
+						"Spirituality": 0
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "3"
+							"ScoreRequired": 2,
+							"ChoiceID": "303"
 						}
 					]
 				}
 			]
 		},
 		{
-			"ID": "5",
+			"ID": "301",
 			"Phrase": "Thanks for your reassurance. Can you talk more about what you mean by 'found'? ",
-			"IsStartingNode": true,
 			"Options": [
 				{
 					"Phrase": "When one opens their mind to accept the reality that higher beings exist, one is 'found'.",
-					"DefaultChoiceID": "2",
+					"DefaultChoiceID": "302",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 2
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "3"
+							"ScoreRequired": 1,
+							"ChoiceID": "302"
 						}
 					]
 				},
 				{
 					"Phrase": "Society clearly has brainwashed you into thinking that extraterrestrial beings don't communicate with us already.",
-					"DefaultChoiceID": "2",
+					"DefaultChoiceID": "302",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 2,
+						"Spirituality": 0
+					},
 					"AttainableChoices": [
 						{
-							"ScoreRequired": 10,
-							"ChoiceID": "2"
+							"ScoreRequired": 2,
+							"ChoiceID": "302"
 						}
 					]
 				}
 			]
 		},
+
+		{
+			"ID": "302",
+			"Phrase": "You think UFOs are real? ",
+			"Options": [
+				{
+					"Phrase": "I know they are. I've been abducted and returned to Earth to spread the divine word of the Higher Beings.",
+					"DefaultChoiceID": "305",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "305"
+						}
+					]
+				},
+				{
+					"Phrase": "It's not about thinking. It's about believing",
+					"DefaultChoiceID": "304",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "304"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "303",
+			"Phrase": "I agree. How can I escape society?",
+			"Options": [
+				{
+					"Phrase": "Do you believe in UFOs?",
+					"DefaultChoiceID": "302",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "302"
+						}
+					]
+				},
+				{
+					"Phrase": "Joining our group will help you find your path.",
+					"DefaultChoiceID": "304",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "304"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "304",
+			"Phrase": "This sounds like a cult. How can I trust you?",
+			"Options": [
+				{
+					"Phrase": "Join our group and I will show you the alien we are keeping in our freezer ;)",
+					"DefaultChoiceID": "305",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "305"
+						}
+					]
+				},
+				{
+					"Phrase": "Cult or not, we are the ONLY way to find the answers to the universe.",
+					"DefaultChoiceID": "305",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "305"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "305",
+			"Phrase": "I am intrigued...",
+			"Options": [
+				{
+					"Phrase": "Recruit",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "-2"
+						}
+					]
+				},
+				{
+					"Phrase": "Dismiss",
+					"DefaultChoiceID": "-2",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "-2"
+						}
+					]
+				}
+			]
+		},
+
+		{
+			"ID": "306",
+			"IsStartingNode": true,
+			"Phrase": "I've heard some rumors that you guys believe aliens exist.",
+			"Options": [
+				{
+					"Phrase": "The rumors are true.",
+					"DefaultChoiceID": "307",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "307"
+						}
+					]
+				},
+				{
+					"Phrase": "It's not a belief. We know of aliens' existance.",
+					"DefaultChoiceID": "307",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "307"
+						}
+					]
+				}
+			]
+		},
+
+
+		{
+			"ID": "307",
+			"Phrase": "Can you give me more information about that?",
+			"Options": [
+				{
+					"Phrase": "When one opens their mind to accept the reality that higher beings exist, one is 'found'.",
+					"DefaultChoiceID": "302",
+					"AppealingFactors": {
+						"Naivety": 0,
+						"Disillusionment": 0,
+						"Spirituality": 1
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 1,
+							"ChoiceID": "302"
+						}
+					]
+				},
+				{
+					"Phrase": "Aliens created humans 3,000 years ago, and now they are returning on UFOs for judgement day.",
+					"DefaultChoiceID": "302",
+					"AppealingFactors": {
+						"Naivety": 1,
+						"Disillusionment": 0,
+						"Spirituality": 0
+					},
+					"AttainableChoices": [
+						{
+							"ScoreRequired": 2,
+							"ChoiceID": "302"
+						}
+					]
+				}
+			]
+		},
+
+
+
+
+
+
+
+
+
+
 	]
 }

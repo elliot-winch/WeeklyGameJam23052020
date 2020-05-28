@@ -9,7 +9,7 @@ public class Cult
     public int StartingLoyality;
     public int StartingReputation;
 
-    [SerializeField]
+    [NonSerialized]
     public List<Candidate> Recruits;
 
     public SubscriptionValue<int> Wealth { get; private set; }
@@ -23,10 +23,13 @@ public class Cult
         Wealth = new SubscriptionValue<int>(StartingWealth);
         Loyality = new SubscriptionValue<int>(StartingLoyality);
         Reputation = new SubscriptionValue<int>(StartingReputation);
+
+        Recruits = new List<Candidate>();
     }
 
     public void AddCandidate(Candidate candidate)
     {
+
         Recruits.Add(candidate);
 
         Wealth.Value += candidate.Wealth;

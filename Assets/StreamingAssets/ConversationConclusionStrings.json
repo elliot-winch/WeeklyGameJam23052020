@@ -1,5 +1,12 @@
 {
 	"SuccessResponses": [ "Wow, thanks! I won't let you down!" ],
-	"FailureResponses": [ "Ew, no way. You're a cult!" ],
-	"RejectedResponses": [ "Oh okay. See ya" ]
+	"FailureResponses": [ "Ew, no way. You're a cult!", 
+						"Ehhh I dunno. You creep me out.", 
+						"I don't have time to join your group..." ],
+
+	"RejectedResponses": [ "Oh okay. See ya", 
+						 "This was a waste of my time...", 
+						 "Whatever. I'm going home.", 
+						"Fine. I didn't wanna be in your cult anyway.", 
+						"Wait, did I do something wrong?" ]
 }
